@@ -26,6 +26,8 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Button Name="SaveBtn"
@@ -83,18 +85,18 @@
                     Grid.Row="4"
                     Grid.ColumnSpan="4"
                     Orientation="Horizontal">
-            <TextBlock Text="Любимый напиток:"
+            <TextBlock Text="Любимая команда:"
                        FontSize="40"
                        VerticalAlignment="Center"/>
             <ComboBox
                 Width="100" 
                 Margin="10"
                 VerticalAlignment="Center">
-                <TextBlock Text="Chester"
+                <TextBlock Text="Lakers"
                            VerticalAlignment="Center"/>
-                <TextBlock Text="Hoegaarden"
+                <TextBlock Text="Dallas"
                            VerticalAlignment="Center"/>
-                
+
             </ComboBox>
         </StackPanel>
 
@@ -115,9 +117,17 @@
                     Orientation="Horizontal">
 
             <Image 
-                Source="Images/1.jpg"/>
-
+                Source="/Images/1.jpg" Margin="0,0,0,-72" Width="139"/>
+            
+            <ListView Margin="160,0,0,-65">
+                <TextBlock><Run Text="Список прочитанных книг:"/></TextBlock>
+                <TextBlock><Run Text="'Как прорваться в нба'"/></TextBlock>
+                <TextBlock><Run Text="'Величайшие игроки нба'"/></TextBlock>
+                <TextBlock><Run Text="'Правила игры в баскетбол'"/></TextBlock>
+            </ListView>
         </StackPanel>
+
+
 
     </Grid>
 </Page>
