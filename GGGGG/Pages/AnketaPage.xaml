@@ -33,10 +33,11 @@
         <Button Name="SaveBtn"
                 Grid.Column="4"
                 Grid.ColumnSpan="2"
-                Margin="20"
+                Margin="10"
                 Content="СОХРАНИТЬ"
                 FontStyle="Italic"
-                FontSize="15"/>
+                FontSize="15"
+                Click="SaveBtn_Click"/>
         <StackPanel  Grid.Column="1"
                      Grid.Row="1"
                      Grid.ColumnSpan="4"
@@ -47,7 +48,8 @@
                        FontSize="40"/>
             <TextBox Width="200"
                      Margin="200 0 0 0"
-                     Height="50"/>
+                     Height="30"
+                     Name="UserName"/>
         </StackPanel>
         <StackPanel Grid.Column="1"
                     Grid.Row="2"

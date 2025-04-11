@@ -24,6 +24,11 @@ namespace GGGGG.Pages
         {
             InitializeComponent();
         }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Данные успешно сохраненны " + UserName.Text);
+        }
     }
     public class Book
     {
